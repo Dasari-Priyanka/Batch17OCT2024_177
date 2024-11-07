@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void find_nth_number(int n);
+int main()
+{
+    int T;
+    printf("Enter number of test cases:");
+    scanf("%d",&T);
+    
+    
+    find_nth_number(T);
+    
+    return 0;
+}
+
+void find_nth_number(int n)
+{
+    int digits[] = {1,4,6,9};
+    int queue[1000];
+    int front=0,rear=0;
+    
+    for(int i=0; i<4;i++)
+    {
+        queue[rear++]=digits[i];
+    }
+    int number;
+    for(int count=1; count<=n;count++)
+    {
+        number=queue[front++];
+        for(int i=0;i<4;i++)
+            queue[rear++]=number*10+digits[i];
+    }
+    printf("The %dth number is: %d\n",n,number);
+}
