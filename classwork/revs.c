@@ -1,36 +1,35 @@
 #include <stdio.h>
 #include <string.h>
-void reverse(char str);
+void revers(char []);
 int main()
 {
-	int k,ret;
-	char str[10];
-	char *ptr = NULL;
+	char str[100];
+	int length;
+	length= strlen(str)-1;
 	printf("\nEnter the string\n");
 	scanf("[^\n]%s",str);
-	printf("\nEnter revser value\n");
-	scanf("%d",&k);
-	ret = reverse(char str);
-	printf("%s",ret);
+	revers(str);
+	printf("%s",str);
 	return 0;
 }
-
-
-
-
-
-void reverse(char str)
+void revers(char str[])
 {
-	int i,j,temp;
-	int len=strlen(str);
-	for(i=0;i<len;i++)
+	int i;
+	char temp;
+	int length;
+	printf("len:%d\n",length);
+	while(i<length)
 	{
 		temp = str[i];
-		str[i]=str[i+1];
-		str[i+1]=temp;
+		str[i]=str[length];
+		str[length]=temp;
+		printf("%s\n",str);
+
+		i++;
+		length--;
 	}
-	return str
-		
+	
+     		
 
 		
 			
