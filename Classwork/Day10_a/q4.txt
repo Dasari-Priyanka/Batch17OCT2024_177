@@ -1,0 +1,47 @@
+//rotate array every kth element
+
+#include <stdio.h>
+int revarray(int arr[],int n);
+int rotate(int arr[],int n, int k);
+
+int rotate(int arr[],int n, int k)
+{
+    int a,b;
+    for(int i=0;i<n;i+=k)
+    {
+        int a=i;
+        int b=i+k-1;
+        if(b>=n)
+            b=n-1;
+    }
+    while(a<b)
+    {
+        int temp=arr[a];
+        arr[a]=arr[b];
+        arr[b]=temp;
+        a++;
+        b--;
+    }
+}
+
+int revarray(int arr[],int n)
+{
+    for(int i=0;i<n;i++)
+        printf("%d",arr[i]);
+    printf("\n");
+}
+
+int main()
+{
+    int n,k,arr[10];
+    printf("Enter the size of the array:\n");
+    for(int i=0;i<n;i++)
+        scanf("%d",&arr[i]);
+    printf("Enter the value of k:\n");
+    scanf("%d",&k);
+    printf("\noriginal Array:\n");
+    revarray(arr,n);
+    
+    rotate(arr,n,k);
+    printf("Array after rotating every %dth element:",k);
+}
