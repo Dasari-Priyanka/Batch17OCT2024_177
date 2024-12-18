@@ -1,0 +1,5 @@
+A=10
+B=20
+#sum=`expr $A + $B`
+let sum= $A+$B
+echo "$A + $B = $sum"

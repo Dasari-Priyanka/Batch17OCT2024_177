@@ -1,0 +1,20 @@
+total 32
+-rw-rw-r-- 1 user79 user79   47 Nov  1 13:29 dircontent.txt
+-rw-rw-r-- 1 user79 user79   70 Oct 31 05:10 file.txt
+-rw-rw-r-- 1 user79 user79   68 Nov  1 14:13 myscript.sh
+drwxrwxr-x 3 user79 user79 4096 Oct 31 05:29 new
+drwxrwxr-x 3 user79 user79 4096 Oct 31 05:34 newprogs
+drwxrwxr-x 2 user79 user79 4096 Oct 31 12:08 p
+-rw-rw-r-- 1 user79 user79    0 Nov  1 14:14 stdio.txt
+drwxrwxr-x 2 user79 user79 4096 Nov  1 13:24 subd1
+-rw-rw-r-- 1 user79 user79    0 Oct 29 18:03 tb1.1
+-rw-rw-r-- 1 user79 user79    0 Oct 29 18:03 tb10.1
+-rw-rw-r-- 1 user79 user79    0 Oct 29 18:03 tb2.1
+-rw-rw-r-- 1 user79 user79    0 Oct 29 18:03 tb3.1
+-rw-rw-r-- 1 user79 user79    0 Oct 29 18:03 tb4.1
+-rw-rw-r-- 1 user79 user79    0 Oct 29 18:03 tb5.1
+-rw-rw-r-- 1 user79 user79    0 Oct 29 18:03 tb6.1
+-rw-rw-r-- 1 user79 user79    0 Oct 29 18:03 tb7.1
+-rw-rw-r-- 1 user79 user79    0 Oct 29 18:03 tb8.1
+-rw-rw-r-- 1 user79 user79    0 Oct 29 18:03 tb9.1
+drwxrwxr-x 2 user79 user79 4096 Oct 31 05:21 testdir

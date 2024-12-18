@@ -1,0 +1,4 @@
+10 hii
+20 hello
+30 hai
+
